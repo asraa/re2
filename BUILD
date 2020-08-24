@@ -88,6 +88,7 @@ cc_library(
         ":windows": [],
         "//conditions:default": ["-pthread"],
     }),
+    nocopts = ["-DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION"],
     visibility = ["//visibility:public"],
 )
 
